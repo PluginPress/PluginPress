@@ -41,16 +41,15 @@
     }
 ],
 "require": {
-  "php": ">=7.0.0"
+  "php": ">=7.0.0",
+  "iamprogrammerlk/pluginpressapi": "*"
 },
 "require-dev": {
-  "php": ">=7.0.0"
+  "php": ">=7.0.0",
+  "iamprogrammerlk/pluginpressapi": "*"
 },
 "conflict": {
   "php": "<7.0.0"
-},
-"suggest": {
-  "IamProgrammerLK/PluginPressAPI": "Adds hassle free WordPress API wrapper"
 },
 "autoload": {
   "psr-4": {
