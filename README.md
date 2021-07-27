@@ -30,6 +30,7 @@ Should be run inside your plugins folder (wp-content/plugins).
 # File structure
 You can add your own new class files by naming them correctly and putting the files in the most appropriate location, see other files for examples. Composer's Autoloader and the Bootstrap class will auto include your file and instantiate the class. The idea of this organization is to be more conscious of structuring your code.
 
+```
 ├── Common
 │   ├── Languages
 │   │   ├── index.php
@@ -62,3 +63,4 @@ You can add your own new class files by naming them correctly and putting the fi
 ├── PluginPress.php
 ├── README.md
 ├── Uninstall.php
+```
