@@ -1,0 +1,46 @@
+{
+  "name": "iamprogrammerlk/pluginpress",
+  "description": "Framework for building object-oriented WordPress plugins. basic files and directory structure with the PluginPress API.",
+  "type": "project",
+  "keywords": [
+    "wordpress",
+    "plugins",
+    "boilerplate",
+    "kick starter kit",
+    "framework",
+    "skeleton"
+  ],
+  "license": "MIT",
+  "homepage": "https://iamprogrammerlk.github.io/PluginPress/",
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "authors": [
+    {
+      "name": "I am Programmer",
+      "email": "iamprogrammerlk@gmail.com",
+      "homepage": "https://iamprogrammer.lk",
+      "role": "Lead Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/IamProgrammerLK/PluginPress/issues",
+    "wiki": "https://github.com/IamProgrammerLK/PluginPress/wiki",
+    "source": "https://github.com/IamProgrammerLK/PluginPress"
+  },
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "require-dev": {
+    "php": ">=7.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "IamProgrammerLK\\PluginPress\\": "Private"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "IamProgrammerLK\\PluginPress\\": "Private"
+    }
+  }
+}
