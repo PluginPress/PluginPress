@@ -1,6 +1,7 @@
 {
   "name": "iamprogrammerlk/pluginpress",
   "description": "Framework for building object-oriented WordPress plugins. basic files and directory structure with the PluginPress API.",
+  "version": "v1.0.0",
   "type": "project",
   "keywords": [
     "wordpress",
@@ -10,10 +11,10 @@
     "framework",
     "skeleton"
   ],
-  "license": "MIT",
   "homepage": "https://iamprogrammerlk.github.io/PluginPress/",
-  "minimum-stability": "stable",
-  "prefer-stable": true,
+  "readme": "README.md",
+  "time": "2021-07-27",
+  "license": "MIT",
   "authors": [
     {
       "name": "I am Programmer",
@@ -23,24 +24,55 @@
     }
   ],
   "support": {
+    "email": "support@iamprogrammer.lk",
     "issues": "https://github.com/IamProgrammerLK/PluginPress/issues",
+    "forum": "https://",
     "wiki": "https://github.com/IamProgrammerLK/PluginPress/wiki",
-    "source": "https://github.com/IamProgrammerLK/PluginPress"
+    "irc": "irc://",
+    "source": "https://github.com/IamProgrammerLK/PluginPress",
+    "docs": "https://",
+    "rss": "https://",
+    "chat": "https://"
   },
-  "require": {
-    "php": ">=7.0.0"
-  },
-  "require-dev": {
-    "php": ">=7.0.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "IamProgrammerLK\\PluginPress\\": "Private"
+  "funding": [
+    {
+        "type": "Buy me a coffee",
+        "url": "https://www.buymeacoffee.com/IamProgrammerLK"
+    },
+    {
+        "type": "Sponsors",
+        "url": "https://sponsors.iamprogrammer.lk/"
     }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "IamProgrammerLK\\PluginPress\\": "Private"
-    }
+],
+"require": {
+  "php": ">=7.0.0"
+},
+"require-dev": {
+  "php": ">=7.0.0"
+},
+"conflict": {
+  "php": "<7.0.0"
+},
+"replace": {
+  "": ""
+},
+"provide": {
+  "": ""
+},
+"suggest": {
+  "IamProgrammerLK/PluginPressAPI": "Adds hassle free WordPress API wrapper"
+},
+"autoload": {
+  "psr-4": {
+    "IamProgrammerLK\\PluginPress\\": "Private"
   }
+},
+"autoload-dev": {
+  "psr-4": {
+    "IamProgrammerLK\\PluginPress\\": "Private"
+  }
+},
+"minimum-stability": "stable",
+"prefer-stable": true,
+"abandoned": false
 }
