@@ -1,7 +1,6 @@
 {
   "name": "iamprogrammerlk/pluginpress",
   "description": "Framework for building object-oriented WordPress plugins. basic files and directory structure with the PluginPress API.",
-  "version": "v1.0.0",
   "type": "project",
   "keywords": [
     "wordpress",
@@ -26,13 +25,10 @@
   "support": {
     "email": "support@iamprogrammer.lk",
     "issues": "https://github.com/IamProgrammerLK/PluginPress/issues",
-    "forum": "https://",
+    "forum": "https://community.iamprogrammer.lk",
     "wiki": "https://github.com/IamProgrammerLK/PluginPress/wiki",
-    "irc": "irc://",
     "source": "https://github.com/IamProgrammerLK/PluginPress",
-    "docs": "https://",
-    "rss": "https://",
-    "chat": "https://"
+    "docs": "https://github.com/IamProgrammerLK/PluginPress/wiki"
   },
   "funding": [
     {
@@ -52,12 +48,6 @@
 },
 "conflict": {
   "php": "<7.0.0"
-},
-"replace": {
-  "": ""
-},
-"provide": {
-  "": ""
 },
 "suggest": {
   "IamProgrammerLK/PluginPressAPI": "Adds hassle free WordPress API wrapper"
