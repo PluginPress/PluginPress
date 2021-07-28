@@ -1,16 +1,16 @@
 <?php
 
-namespace IamProgrammerLK\PluginPress;
+namespace IamProgrammerLK\PluginPress\PluginActivator;
 
 use IamProgrammerLK\PluginPressAPI\PluginOptions\PluginOptions;
 
 // If this file is called directly, abort. for the security purpose.
-if ( ! defined( 'WPINC' ) )
+if( ! defined( 'WPINC' ) )
 {
     die;
 }
 
-class PluginPress
+class ActivationSequence
 {
 
     private $pluginOptions;
@@ -22,7 +22,6 @@ class PluginPress
 
     public function init()
     {
-        // initiate all the plugin classes in  here. use this place as a entry point.
     }
 
 }

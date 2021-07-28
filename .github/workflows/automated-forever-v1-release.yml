@@ -1,5 +1,5 @@
 # https://github.com/marketplace/actions/automatic-releases
-name: "Automated forever v1 release"
+name: "Automated Forever v1 Release"
 on:
   push:
     branches:

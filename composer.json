@@ -42,11 +42,9 @@
 ],
 "require": {
   "php": ">=7.0.0",
-  "iamprogrammerlk/pluginpressapi": "*"
+  "iamprogrammerlk/pluginpressapi": ">=1.0.0"
 },
 "require-dev": {
-  "php": ">=7.0.0",
-  "iamprogrammerlk/pluginpressapi": "*"
 },
 "conflict": {
   "php": "<7.0.0"
