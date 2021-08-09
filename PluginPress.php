@@ -3,7 +3,7 @@
 /*
 ** @project
 ** Project Name:        PluginPress
-** Project Description: Framework for building object-oriented WordPress plugins. basic files and directory structure with the PluginPress API.
+** Project Description: Skeleton framework for building object-oriented WordPress plugins. basic files and directory structure with the PluginPress APIs.
 ** Project Version:     1.0.0
 ** File Name:           PluginPress.php
 ** File Description:    This file is read by WordPress to generate the plugin information in the plugin admin area.
@@ -20,7 +20,7 @@
 ** Title:               PluginPress
 ** Plugin URI:          https://iamprogrammerlk.github.io/PluginPress/
 ** Version:             1.0.0
-** Description:         Framework for building object-oriented WordPress plugins. basic files and directory structure with the PluginPress API.
+** Description:         Skeleton framework for building object-oriented WordPress plugins. basic files and directory structure with the PluginPress APIs.
 ** Text Domain:         pluginpress
 ** Domain Path:         /Common/Languages
 ** Network:             
@@ -58,30 +58,31 @@ if( ! defined( 'WPINC' ) )
 // Dynamically include the classes.
 require_once trailingslashit( dirname( __FILE__ ) ) . 'vendor/autoload.php';
 
-// triggers when the plugin is activated
-function pluginActivationHook()
-{
-    PluginOptions::setInstance( __FILE__, plugin_dir_path( __FILE__ ) . 'Private/Configs/PluginOptions.php' );
-    $pluginActivator = new PluginActivator();
-    $pluginActivator->activate();
-}
-register_activation_hook( __file__, 'IamProgrammerLK\PluginPress\pluginActivationHook' );
+// // triggers when the plugin is activated
+// function pluginActivationHook()
+// {
+//     PluginOptions::setInstance( __FILE__, plugin_dir_path( __FILE__ ) . 'Private/Configs/PluginOptions.php' );
+//     $pluginActivator = new PluginActivator();
+//     $pluginActivator->activate();
+// }
+// register_activation_hook( __file__, 'IamProgrammerLK\PluginPress\pluginActivationHook' );
 
-// triggers when the plugin is deactivated
-function pluginDeactivationHook()
-{
-    PluginOptions::setInstance( __FILE__, plugin_dir_path( __FILE__ ) . 'Private/Configs/PluginOptions.php' );
-    $pluginActivator = new PluginActivator();
-    $pluginActivator->deactivate();
-}
-register_deactivation_hook( __FILE__, 'IamProgrammerLK\PluginPress\pluginDeactivationHook' );
+// // triggers when the plugin is deactivated
+// function pluginDeactivationHook()
+// {
+//     PluginOptions::setInstance( __FILE__, plugin_dir_path( __FILE__ ) . 'Private/Configs/PluginOptions.php' );
+//     $pluginActivator = new PluginActivator();
+//     $pluginActivator->deactivate();
+// }
+// register_deactivation_hook( __FILE__, 'IamProgrammerLK\PluginPress\pluginDeactivationHook' );
 
 // initiate the plugin
 if( ! class_exists( 'PluginPress' ) )
 {
-    // $string - absolute path of the primary plugin file
+    // $string - absolute path of the primary plugin file(this file)
     // $string - absolute path of the plugin config file
-    PluginOptions::setInstance( __FILE__, plugin_dir_path( __FILE__ ) . 'Private/Configs/PluginOptions.php' );
-    $pluginpress = new PluginPress();
+    $pluginOptions = new PluginOptions( __FILE__, plugin_dir_path( __FILE__ ) . 'Configs/PluginOptions.php' );
+    $pluginpress = new PluginPress( $pluginOptions );
     $pluginpress->init();
+    echo '<pre> '; var_dump( $pluginOptions->get('namespace') ); echo ' </pre>';
 }

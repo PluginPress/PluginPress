@@ -15,14 +15,16 @@ class PluginPress
 
     private $pluginOptions;
 
-    public function __construct()
+    public function __construct( object $pluginOptions )
     {
-        $this->pluginOptions = PluginOptions::getInstance();
+        $this->pluginOptions = $pluginOptions;
     }
 
     public function init()
     {
         // initiate all the plugin classes in  here. use this place as a entry point.
+        echo '<pre> '; var_dump( $this->pluginOptions->get('namespace') ); echo ' </pre>';
+        $this->pluginOptions->set('namespace', 'ssssssssssssssssssssssssssssssssssssss') ;
     }
 
 }

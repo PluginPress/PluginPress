@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/IamProgrammerLK/PluginPressAPI.git",
-                "reference": "bdc0bc628c5a4041003d0f1c49b23cd34d9476c6"
+                "reference": "5df19d204e7349ae401d5b7db6e7b57cf1fb2d36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/IamProgrammerLK/PluginPressAPI/zipball/bdc0bc628c5a4041003d0f1c49b23cd34d9476c6",
-                "reference": "bdc0bc628c5a4041003d0f1c49b23cd34d9476c6",
+                "url": "https://api.github.com/repos/IamProgrammerLK/PluginPressAPI/zipball/5df19d204e7349ae401d5b7db6e7b57cf1fb2d36",
+                "reference": "5df19d204e7349ae401d5b7db6e7b57cf1fb2d36",
                 "shasum": ""
             },
             "require": {
