@@ -53,6 +53,7 @@ An answer to that question.
 
 == Donations ==
 
-I love coffee. without it, I would not be able to create the content to help the developer community, so if you wouldn't mind, please [buying me a cup of coffee](https://sponsors.iamprogrammer.lk). it could be a big help to me to be able to pay the cost of web hosting, domain, and software fee as I need to pay from my pocket.
+I love coffee. without it, I would not be able to create the content to help the developer community, so if you wouldn't mind, please [buying me a cup of coffee](https://sponsors.iamprogrammer.lk).
+it could be a big help to me to be able to pay the cost of web hosting, domain, and software fee as I need to pay from my pocket.
 
 [Buy Me A Coffee](https://sponsors.iamprogrammer.lk)

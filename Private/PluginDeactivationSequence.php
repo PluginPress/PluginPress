@@ -1,6 +1,6 @@
 <?php
 
-namespace IamProgrammerLK\PluginPress\PluginActivator;
+namespace IamProgrammerLK\PluginPress;
 
 use IamProgrammerLK\PluginPressAPI\PluginOptions\PluginOptions;
 
@@ -10,14 +10,14 @@ if( ! defined( 'WPINC' ) )
     die;
 }
 
-class DeactivationSequence
+class PluginDeactivationSequence
 {
 
-    private $pluginOptions;
+    protected $plugin_options;
 
-    public function __construct()
+    public function __construct( PluginOptions $plugin_options )
     {
-        $this->pluginOptions = PluginOptions::getInstance();
+        $this->plugin_options = $plugin_options;
     }
 
     public function init()

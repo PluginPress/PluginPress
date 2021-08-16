@@ -2,7 +2,7 @@
 
 namespace IamProgrammerLK\PluginPress;
 
-use IamProgrammerLK\PluginPressAPI\PluginOptions\PluginOptions;
+use IamProgrammerLK\PluginPressAPI\PluginPressAPI;
 
 // If this file is called directly, abort. for the security purpose.
 if ( ! defined( 'WPINC' ) )
@@ -10,21 +10,40 @@ if ( ! defined( 'WPINC' ) )
     die;
 }
 
-class PluginPress
+class PluginPress extends PluginPressAPI
 {
 
-    private $pluginOptions;
-
-    public function __construct( object $pluginOptions )
+    public function __construct( string $plugin_file_path, string $config_file_path )
     {
-        $this->pluginOptions = $pluginOptions;
+        parent::__construct( $plugin_file_path, $config_file_path );
     }
 
     public function init()
     {
-        // initiate all the plugin classes in  here. use this place as a entry point.
-        echo '<pre> '; var_dump( $this->pluginOptions->get('namespace') ); echo ' </pre>';
-        $this->pluginOptions->set('namespace', 'ssssssssssssssssssssssssssssssssssssss') ;
+        // triggers when the plugin is activated. If a plugin is silently activated (such as during an update), this hook does not fire.
+        add_action( 'activation_hook_' . $this->plugin_options->get( 'plugin_slug' ), [ $this, 'activation_hook'] );
+        // triggers when the plugin is deactivated. If a plugin is silently deactivated (such as during an update), this hook does not fire.
+        add_action( 'deactivation_hook_' . $this->plugin_options->get( 'plugin_slug' ), [ $this, 'deactivation_hook'] );
+        
+
+
+
+        ( new CreateAdminPages( $this->plugin_options ) )->init();
+
+
+
+    }
+
+    // triggers when the plugin is activated. If a plugin is silently activated (such as during an update), this hook does not fire.
+    public function activation_hook()
+    {
+        ( new PluginActivationSequence( $this->plugin_options ) )->init();
+    }
+
+    // triggers when the plugin is deactivated. If a plugin is silently deactivated (such as during an update), this hook does not fire.
+    public function deactivation_hook()
+    {
+        ( new PluginDeactivationSequence( $this->plugin_options ) )->init();
     }
 
 }

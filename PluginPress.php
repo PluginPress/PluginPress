@@ -10,7 +10,7 @@
 **                      This file also includes all of the dependencies used by the plugin, registers the activation
 **                      and deactivation functions, and defines a function that starts the plugin.
 ** File Version:        1.0.0
-** Last Change:         2021-07-27
+** Last Change:         2021-08-16
 **
 ** @wordpress-plugin
 ** Plugin Name:         PluginPress
@@ -44,11 +44,6 @@
 
 namespace IamProgrammerLK\PluginPress;
 
-// DO NOT change this unless you don't need to use PluginPressAPIs
-use IamProgrammerLK\PluginPressAPI\PluginOptions\PluginOptions;
-
-use IamProgrammerLK\PluginPress\PluginActivator\PluginActivator;
-
 // If this file is called directly, abort. for the security purpose.
 if( ! defined( 'WPINC' ) )
 {
@@ -58,31 +53,13 @@ if( ! defined( 'WPINC' ) )
 // Dynamically include the classes.
 require_once trailingslashit( dirname( __FILE__ ) ) . 'vendor/autoload.php';
 
-// // triggers when the plugin is activated
-// function pluginActivationHook()
-// {
-//     PluginOptions::setInstance( __FILE__, plugin_dir_path( __FILE__ ) . 'Private/Configs/PluginOptions.php' );
-//     $pluginActivator = new PluginActivator();
-//     $pluginActivator->activate();
-// }
-// register_activation_hook( __file__, 'IamProgrammerLK\PluginPress\pluginActivationHook' );
 
-// // triggers when the plugin is deactivated
-// function pluginDeactivationHook()
-// {
-//     PluginOptions::setInstance( __FILE__, plugin_dir_path( __FILE__ ) . 'Private/Configs/PluginOptions.php' );
-//     $pluginActivator = new PluginActivator();
-//     $pluginActivator->deactivate();
-// }
-// register_deactivation_hook( __FILE__, 'IamProgrammerLK\PluginPress\pluginDeactivationHook' );
 
 // initiate the plugin
 if( ! class_exists( 'PluginPress' ) )
 {
-    // $string - absolute path of the primary plugin file(this file)
-    // $string - absolute path of the plugin config file
-    $pluginOptions = new PluginOptions( __FILE__, plugin_dir_path( __FILE__ ) . 'Configs/PluginOptions.php' );
-    $pluginpress = new PluginPress( $pluginOptions );
-    $pluginpress->init();
-    echo '<pre> '; var_dump( $pluginOptions->get('namespace') ); echo ' </pre>';
+    // @string - required - absolute path to the primary plugin file (this file).
+    // @string - required - absolute path to the plugin options file.
+    $test_plugin = new PluginPress( __FILE__, plugin_dir_path( __FILE__ ) . 'Configs/PluginOptions.php' );
+    $test_plugin->init();
 }
