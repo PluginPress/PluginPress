@@ -43,6 +43,36 @@ class CreateAdminPages
         // add_action('after_header_section_pluginpressapi_test_options_page_02', function () {
         //     echo 'after_header_section_test_menu_page_01';
         // });
+
+        add_filter(
+            'before_tab_render_' . $this->plugin_options->get( 'plugin_slug' ) . '_test_options_page_02_test_tab_01',
+            function( $tab )
+            {
+                $tab['tab_after_icon'] = 'dashicons dashicons-warning';
+                $tab['tab_after_icon_style'] = 'color:red;';
+                return $tab;
+            }
+        );
+        add_filter(
+            'before_section_render_' . $this->plugin_options->get( 'plugin_slug' ) . '_test_options_page_02_test_section_01',
+            function( $section )
+            {
+                $section['section_before_icon'] = 'dashicons dashicons-book';
+                $section['section_before_icon_style'] = 'color:gray;';
+                $section['section_after_icon'] = 'dashicons dashicons-warning';
+                $section['section_after_icon_style'] = 'color:red;';
+                return $section;
+            }
+        );
+        add_filter(
+            'before_option_render_' . $this->plugin_options->get( 'plugin_slug' ) . '_test_options_page_02_test_option_01',
+            function( $option )
+            {
+                $option[ 'option_help_icon_style' ] = 'color:blue;';
+                // $option[ 'option_disabled' ] = true;
+                return $option;
+            }
+        );
     }
 
     private function create_option_page()
@@ -316,37 +346,6 @@ class CreateAdminPages
             ] 
         );
         $admin_welcome_page->init();
-        add_filter(
-            'before_tab_render_' . $this->plugin_options->get( 'plugin_slug' ) . '_test_options_page_02_test_tab_01',
-            function( $tab )
-            {
-                $tab['tab_after_icon'] = 'dashicons dashicons-warning';
-                $tab['tab_after_icon_style'] = 'color:red;';
-                return $tab;
-            }
-        );
-        add_filter(
-            'before_section_render_' . $this->plugin_options->get( 'plugin_slug' ) . '_test_options_page_02_test_section_01',
-            function( $section )
-            {
-                $section['section_before_icon'] = 'dashicons dashicons-book';
-                $section['section_before_icon_style'] = 'color:gray;';
-                $section['section_after_icon'] = 'dashicons dashicons-warning';
-                $section['section_after_icon_style'] = 'color:red;';
-                return $section;
-            }
-        );
-
-        add_filter(
-            'before_option_render_' . $this->plugin_options->get( 'plugin_slug' ) . '_test_options_page_02_test_option_01',
-            function( $option )
-            {
-                $option[ 'option_help_icon_style' ] = 'color:blue;';
-                // $option[ 'option_disabled' ] = true;
-                return $option;
-            }
-        );
-
     }
 
 }
