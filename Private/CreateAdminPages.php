@@ -147,6 +147,7 @@ class CreateAdminPages
                     'page_description' => 'This is the test option page 03',
                     'page_capabilities'     => 'manage_options',
                     'page_slug'        => 'test_options_page_03',
+                    'page_ui'               => plugin_dir_path( __FILE__ ) . 'Templates/TestOptionPageTemplate.php',
                 ],
                 // more pages
             ]
