@@ -1,9 +1,9 @@
 <?php
 
-namespace IamProgrammerLK\PluginPress;
+namespace PluginPress\PluginPress;
 
-use IamProgrammerLK\PluginPressAPI\PluginOptions\PluginOptions;
-use IamProgrammerLK\PluginPressAPI\Admin\AdminPages;
+use PluginPress\PluginPressAPI\PluginOptions\PluginOptions;
+use PluginPress\PluginPressAPI\Admin\AdminPages;
 
 // If this file is called directly, abort. for the security purpose.
 if( ! defined( 'WPINC' ) )

@@ -42,7 +42,7 @@
 ],
 "require": {
   "php": ">=7.0.0",
-  "iamprogrammerlk/pluginpressapi": ">=1.0.0"
+  "pluginpress/pluginpressapi": ">=1.0.0"
 },
 "require-dev": {
 },
@@ -56,7 +56,8 @@
 },
 "autoload-dev": {
   "psr-4": {
-    "PluginPress\\PluginPress\\": "Private"
+    "PluginPress\\PluginPress\\": "Private",
+    "PluginPress\\TestPlugin\\": "TestPlugin"
   }
 },
 "minimum-stability": "stable",

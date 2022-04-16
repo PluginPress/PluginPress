@@ -15,37 +15,37 @@ Since PluginPressAPI is in a separate repository, it will have proper versioning
 # Installation
 The PluginPress can be installed directly into your plugins folder "as-is", and it works. You will want to rename it and the classes inside of it to fit your needs.
 
-`composer create-project iamprogrammerlk/pluginpress YOUR-PLUGIN-NAME`
+`composer create-project pluginpress/pluginpress YOUR_PLUGIN_NAME`
 
 Should be run inside your plugins folder (wp-content/plugins).
 
 # Setup
-* Rename the `YOUR-PLUGIN-NAME/PluginPress.php` and to `YOUR-PLUGIN-NAME/YOUR-PLUGIN-NAME.php`.
-* Rename the `YOUR-PLUGIN-NAME/Private/PluginPress.php` to `YOUR-PLUGIN-NAME/Private/YOUR-PLUGIN-NAME.php`.
-* Edit the main file’s header comment section details in `YOUR-PLUGIN-NAME.php` with `YOUR-OWN-PLUGIN-DETAILS`.
-* Update the plugin details in `YOUR-PLUGIN-NAME/Private/Config/PluginOptions.php` with `YOUR-OWN-PLUGIN-DETAILS`.
+* Rename the `YOUR_PLUGIN_NAME/PluginPress.php` to `YOUR_PLUGIN_NAME/YOUR_PLUGIN_NAME.php`.
+* Rename the `YOUR_PLUGIN_NAME/Private/PluginPress.php` to `YOUR_PLUGIN_NAME/Private/YOUR_PLUGIN_NAME.php`.
+* Edit the main file’s header comment section details in `YOUR_PLUGIN_NAME/YOUR_PLUGIN_NAME.php` with `YOUR-OWN-PLUGIN-DETAILS`.
+* Update the plugin details in `YOUR_PLUGIN_NAME/Private/Config/PluginOptions.php` with `YOUR-OWN-PLUGIN-DETAILS`.
 * DO NOT change/edit/replace the `PluginPressAPI`.
-* Replace namespace `IamProgrammerLK/PluginPress` with your own.
-* DO NOT change the use of `IamProgrammerLK/PluginPressAPI/**/**`.
-* Update autoloader namespace in `composer.json`. then run `composer dump-autoload`. Should be run inside your plugin folder (wp-content/plugins/YOUR-PLUGIN-NAME).
+* Replace namespace `PluginPress/PluginPress` with your own.
+* DO NOT change the use of `PluginPress/PluginPressAPI/**/**`.
+* Update autoloader namespace in `composer.json`. then run `composer dump-autoload`. Should be run inside your plugin folder (wp-content/plugins/YOUR_PLUGIN_NAME).
 * Replace everything's if its says `PLUGINPRESS`, `PluginPress` or `pluginpress`. and please make sure to do Case-Sensitive replaces.
 * Here is a list of what you should replace (make sure to do case-sensitive search-replaces).
   * FILE --- || LINE NO || --- STRING TO REPLACE
-  * `YOUR-PLUGIN-NAME/YOUR-PLUGIN-NAME.php` --- || 45 || --- `IamProgrammerLK\PluginPress`
-  * `YOUR-PLUGIN-NAME/YOUR-PLUGIN-NAME.php` --- || 50 || --- `IamProgrammerLK\PluginPress`
-  * `YOUR-PLUGIN-NAME/YOUR-PLUGIN-NAME.php` --- || 68 || --- `IamProgrammerLK\PluginPress`
-  * `YOUR-PLUGIN-NAME/YOUR-PLUGIN-NAME.php` --- || 77 || --- `IamProgrammerLK\PluginPress`
-  * `YOUR-PLUGIN-NAME/YOUR-PLUGIN-NAME.php` --- || 80 || --- `PluginPress`
-  * `YOUR-PLUGIN-NAME/YOUR-PLUGIN-NAME.php` --- || 85 || --- `PluginPress` && `pluginpress`
-  * `YOUR-PLUGIN-NAME/YOUR-PLUGIN-NAME.php` --- || 86 || --- `pluginpress`
-  * `YOUR-PLUGIN-NAME/composer.json` --- || 02 || --- `iamprogrammerlk/pluginpress`
-  * `YOUR-PLUGIN-NAME/composer.json` --- || 54 || --- `IamProgrammerLK\\PluginPress\\`
-  * `YOUR-PLUGIN-NAME/composer.json` --- || 59 || --- `IamProgrammerLK\\PluginPress\\`
-  * `YOUR-PLUGIN-NAME/Private/YOUR-PLUGIN-NAME.php` --- || 03 || --- `IamProgrammerLK\PluginPress`
-  * `YOUR-PLUGIN-NAME/Private/YOUR-PLUGIN-NAME.php` --- || 13 || --- `PluginPress`
-  * `YOUR-PLUGIN-NAME/Private/PluginActivator/PluginActivator.php` --- || 03 || --- `PluginPress`
-  * `YOUR-PLUGIN-NAME/Private/PluginActivator/ActivationSequence.php` --- || 03 || --- `PluginPress`
-  * `YOUR-PLUGIN-NAME/Private/PluginActivator/DeactivationSequence.php` --- || 03 || --- `PluginPress`
+  * `YOUR_PLUGIN_NAME/YOUR_PLUGIN_NAME.php` --- || 45 || --- `PluginPress\PluginPress`
+  * `YOUR_PLUGIN_NAME/YOUR_PLUGIN_NAME.php` --- || 50 || --- `PluginPress\PluginPress`
+  * `YOUR_PLUGIN_NAME/YOUR_PLUGIN_NAME.php` --- || 68 || --- `PluginPress\PluginPress`
+  * `YOUR_PLUGIN_NAME/YOUR_PLUGIN_NAME.php` --- || 77 || --- `PluginPress\PluginPress`
+  * `YOUR_PLUGIN_NAME/YOUR_PLUGIN_NAME.php` --- || 80 || --- `PluginPress`
+  * `YOUR_PLUGIN_NAME/YOUR_PLUGIN_NAME.php` --- || 85 || --- `PluginPress` && `pluginpress`
+  * `YOUR_PLUGIN_NAME/YOUR_PLUGIN_NAME.php` --- || 86 || --- `pluginpress`
+  * `YOUR_PLUGIN_NAME/composer.json` --- || 02 || --- `pluginpress/pluginpress`
+  * `YOUR_PLUGIN_NAME/composer.json` --- || 54 || --- `PluginPress\\PluginPress\\`
+  * `YOUR_PLUGIN_NAME/composer.json` --- || 59 || --- `PluginPress\\PluginPress\\`
+  * `YOUR_PLUGIN_NAME/Private/YOUR_PLUGIN_NAME.php` --- || 03 || --- `PluginPress\PluginPress`
+  * `YOUR_PLUGIN_NAME/Private/YOUR_PLUGIN_NAME.php` --- || 13 || --- `PluginPress`
+  * `YOUR_PLUGIN_NAME/Private/PluginActivator/PluginActivator.php` --- || 03 || --- `PluginPress`
+  * `YOUR_PLUGIN_NAME/Private/PluginActivator/ActivationSequence.php` --- || 03 || --- `PluginPress`
+  * `YOUR_PLUGIN_NAME/Private/PluginActivator/DeactivationSequence.php` --- || 03 || --- `PluginPress`
 
 # Usage
 * Add all the `Classes/Functions/Templates/Traits` in the `Private` directory.

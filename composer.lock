@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "782538ead62f36eff8a621cedf23e3f1",
+    "content-hash": "2c645eede8938c8f23e106784c19a8e1",
     "packages": [
         {
-            "name": "iamprogrammerlk/pluginpressapi",
+            "name": "pluginpress/pluginpressapi",
             "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PluginPress/PluginPressAPI.git",
-                "reference": "172f82ec17549b76d3960e42b6221037ac07ec7e"
+                "reference": "f2df429c2257e29093460ec7459aad5ff3f272d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PluginPress/PluginPressAPI/zipball/172f82ec17549b76d3960e42b6221037ac07ec7e",
-                "reference": "172f82ec17549b76d3960e42b6221037ac07ec7e",
+                "url": "https://api.github.com/repos/PluginPress/PluginPressAPI/zipball/f2df429c2257e29093460ec7459aad5ff3f272d5",
+                "reference": "f2df429c2257e29093460ec7459aad5ff3f272d5",
                 "shasum": ""
             },
             "require": {
@@ -29,7 +29,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "IamProgrammerLK\\PluginPressAPI\\": "Private"
+                    "PluginPress\\PluginPressAPI\\": "Private"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -45,7 +45,7 @@
                 }
             ],
             "description": "API wrapper classes for building object-oriented WordPress plugins.",
-            "homepage": "https://iamprogrammerlk.github.io/PluginPressAPI/",
+            "homepage": "https://pluginpress.github.io/PluginPressAPI/",
             "keywords": [
                 "Skeleton",
                 "api",
@@ -54,12 +54,12 @@
                 "wordpress"
             ],
             "support": {
-                "docs": "https://github.com/IamProgrammerLK/PluginPressAPI/wiki",
+                "docs": "https://github.com/PluginPress/PluginPressAPI/wiki",
                 "email": "support@iamprogrammer.lk",
                 "forum": "https://community.iamprogrammer.lk",
-                "issues": "https://github.com/IamProgrammerLK/PluginPressAPI/issues",
-                "source": "https://github.com/IamProgrammerLK/PluginPressAPI",
-                "wiki": "https://github.com/IamProgrammerLK/PluginPressAPI/wiki"
+                "issues": "https://github.com/PluginPress/PluginPressAPI/issues",
+                "source": "https://github.com/PluginPress/PluginPressAPI",
+                "wiki": "https://github.com/PluginPress/PluginPressAPI/wiki"
             },
             "funding": [
                 {

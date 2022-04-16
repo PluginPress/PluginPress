@@ -16,9 +16,9 @@
 ** Plugin Name:         PluginPress
 ** Short Name:          PluginPress
 ** Plugin Slug:         pluginpress
-** Plugin Namespace:    IamProgrammerLK\PluginPress
+** Plugin Namespace:    PluginPress\PluginPress
 ** Title:               PluginPress
-** Plugin URI:          https://iamprogrammerlk.github.io/PluginPress/
+** Plugin URI:          https://pluginpress.github.io/PluginPress/
 ** Version:             1.0.0
 ** Description:         Skeleton framework for building object-oriented WordPress plugins. basic files and directory structure with the PluginPress APIs.
 ** Text Domain:         pluginpress
@@ -30,7 +30,7 @@
 ** Requires at least:   5.6.0
 ** WP tested up to:     5.8.0
 ** License:             MIT
-** License URI:         https://github.com/IamProgrammerLK/PluginPress/blob/main/LICENSE
+** License URI:         https://github.com/PluginPress/PluginPress/blob/main/LICENSE
 **
 ** @copyrights
 ** Copyright:           Copyright (C) IamProgrammerLK - All Rights Reserved
@@ -42,7 +42,7 @@
 ** Since                1.0.0 (2021-07-26)
 */
 
-namespace IamProgrammerLK\PluginPress;
+namespace PluginPress\PluginPress;
 
 // If this file is called directly, abort. for the security purpose.
 if( ! defined( 'WPINC' ) )
