@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "19e5a42369360041b6ec3578719ac88d",
+    "content-hash": "782538ead62f36eff8a621cedf23e3f1",
     "packages": [
         {
             "name": "iamprogrammerlk/pluginpressapi",
             "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/IamProgrammerLK/PluginPressAPI.git",
-                "reference": "5df19d204e7349ae401d5b7db6e7b57cf1fb2d36"
+                "url": "https://github.com/PluginPress/PluginPressAPI.git",
+                "reference": "172f82ec17549b76d3960e42b6221037ac07ec7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/IamProgrammerLK/PluginPressAPI/zipball/5df19d204e7349ae401d5b7db6e7b57cf1fb2d36",
-                "reference": "5df19d204e7349ae401d5b7db6e7b57cf1fb2d36",
+                "url": "https://api.github.com/repos/PluginPress/PluginPressAPI/zipball/172f82ec17549b76d3960e42b6221037ac07ec7e",
+                "reference": "172f82ec17549b76d3960e42b6221037ac07ec7e",
                 "shasum": ""
             },
             "require": {

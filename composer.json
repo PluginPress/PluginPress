@@ -1,5 +1,5 @@
 {
-  "name": "iamprogrammerlk/pluginpress",
+  "name": "pluginpress/pluginpress",
   "description": "Skeleton framework for building object-oriented WordPress plugins. basic files and directory structure with the PluginPress APIs.",
   "type": "project",
   "keywords": [
@@ -10,7 +10,7 @@
     "framework",
     "skeleton"
   ],
-  "homepage": "https://iamprogrammerlk.github.io/PluginPress/",
+  "homepage": "https://pluginpress.github.io/PluginPress/",
   "readme": "README.md",
   "time": "2021-07-27",
   "license": "MIT",
@@ -24,11 +24,11 @@
   ],
   "support": {
     "email": "support@iamprogrammer.lk",
-    "issues": "https://github.com/IamProgrammerLK/PluginPress/issues",
+    "issues": "https://github.com/PluginPress/PluginPress/issues",
     "forum": "https://community.iamprogrammer.lk",
-    "wiki": "https://github.com/IamProgrammerLK/PluginPress/wiki",
-    "source": "https://github.com/IamProgrammerLK/PluginPress",
-    "docs": "https://github.com/IamProgrammerLK/PluginPress/wiki"
+    "wiki": "https://github.com/PluginPress/PluginPress/wiki",
+    "source": "https://github.com/PluginPress/PluginPress",
+    "docs": "https://github.com/PluginPress/PluginPress/wiki"
   },
   "funding": [
     {
@@ -51,12 +51,12 @@
 },
 "autoload": {
   "psr-4": {
-    "IamProgrammerLK\\PluginPress\\": "Private"
+    "PluginPress\\PluginPress\\": "Private"
   }
 },
 "autoload-dev": {
   "psr-4": {
-    "IamProgrammerLK\\PluginPress\\": "Private"
+    "PluginPress\\PluginPress\\": "Private"
   }
 },
 "minimum-stability": "stable",
